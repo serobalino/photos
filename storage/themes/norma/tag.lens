@@ -1,0 +1,23 @@
+<koken:include file="inc/components/header.html" />
+<main role="main">
+<koken:load limit="18" infinite="true">
+  <article class="top-section">
+    <h1 class="page-name">Browsing {{ tag.title }}</h1>
+  </article>
+    <ul class="grid">
+      <koken:loop>
+        <li>
+          <koken:link>
+            <koken:img crop="adaptive"/>
+          </koken:link>
+        </li>
+      </koken:loop>
+    </ul>
+  <koken:else>
+    <koken:note>
+      No album data found 
+    </koken:note>
+</koken:load>
+</main>
+</body>
+</html>

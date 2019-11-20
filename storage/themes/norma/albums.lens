@@ -1,0 +1,23 @@
+<koken:include file="inc/components/header.html" />
+<main role="main">
+  <koken:load limit="18" infinite="true">
+    <ul class="grid">
+      <koken:loop>
+        <li>
+          <koken:link  title="View {{ album.title }}">
+              <koken:img crop="adaptive" />
+              <div>
+                <h3>{{ album.title }} </h3>
+              </div>
+          </koken:link>
+        </li>
+      </koken:loop>
+    </ul>
+  <koken:else>
+    <koken:note>
+      No public albums found 
+    </koken:note>
+  </koken:load>
+</main>
+</body>
+</html>

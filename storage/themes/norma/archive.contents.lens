@@ -1,0 +1,62 @@
+<koken:include file="inc/components/header.html" />
+<main role="main">
+<koken:load>
+    <koken:if data="archive.type" equals="date">
+      <article class="top-section">
+      <p class="album-name">{{ archive.title }}</p> 
+      </article>
+      <ul class="grid">
+      <koken:loop>
+        <li>
+          <koken:link  title="View {{ album.title }}">
+              <koken:img crop="adaptive" />
+              <div>
+                <h3>{{ album.title }} </h3>
+              </div>
+          </koken:link>
+        </li>
+        </koken:loop>
+      </ul>
+    </koken:if>
+    <koken:if data="archive.type" equals="tag">
+      <article class="top-section">
+      <p class="album-name">{{ archive.type.singular }} #{{ archive.title }}</p> 
+      </article>
+      <ul class="grid">
+      <koken:loop>
+        <li>
+          <koken:link  title="View {{ album.title }}">
+              <koken:img crop="adaptive" />
+              <div>
+                <h3>{{ album.title }} </h3>
+              </div>
+          </koken:link>
+        </li>
+        </koken:loop>
+      </ul>
+    </koken:if> 
+    <koken:if data="archive.type" equals="category">
+      <article class="top-section">
+      <p class="album-name">{{ archive.type.singular }} {{ archive.title }}</p> 
+      </article>
+      <ul class="grid">
+      <koken:loop>
+        <li>
+          <koken:link  title="View {{ album.title }}">
+              <koken:img crop="adaptive" />
+              <div>
+                <h3>{{ album.title }} </h3>
+              </div>
+          </koken:link>
+        </li>
+        </koken:loop>
+      </ul>
+    </koken:if>
+<koken:else>
+  <koken:note>
+    No public albums found 
+  </koken:note>
+</koken:load>
+</main>
+</body>
+</html>
