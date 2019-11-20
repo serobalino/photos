@@ -1,0 +1,95 @@
+{
+	"name": "Twitter Timeline",
+	"version": "1.0",
+	"description": "Automatically add a twitter timeline to any theme.",
+	"demo": "http://laurendavissmith.com/pages/twitter-timeline-demo/",
+	"author": {
+		"name": "Lauren Davis Smith",
+		"link": "http://laurendavissmith.com"
+	},
+
+	"data": {
+		"username": {
+			"label": "Username",
+			"type": "string",
+			"info": "",
+			"validation": {
+				"type": "not_empty",
+				"error_message": "Please enter a twitter username."
+			}
+		},
+		"widgetId": {
+			"label": "Widget ID",
+			"type": "string",
+			"info": "The widget ID is located in the url after you have created your widget from https://twitter.com/settings/widgets.",
+			"validation": {
+				"type": "not_empty",
+				"error_message": "Please enter a widget id. Click more info for where this can be found."
+			}
+		},
+		"element": {
+			"label": "Element",
+			"info": "Enter the selector of the element for where you would like your timeline to appear. If you leave this blank it simply be appended to the html body.",
+			"type": "string"
+		},
+		"theme": {
+			"label": "Theme",
+			"type": "select",
+			"info": "Specifies whether your theme is dark or light to setup the style properly.",
+			"options": [
+				{ "value": "light", "label": "Light" },
+				{ "value": "dark", "label": "Dark" }
+			]
+		},
+		"width": {
+			"label": "Width",
+			"info": "Enter the width you would like your timeline to be. If left blank it will default to the width of the element.",
+			"type": "string"
+		},
+		"height": {
+			"label": "Height",
+			"info": "Enter the height you would like your timeline to be. If left blank it will default to the height of the element.",
+			"type": "string"
+		},
+		"linkColor": {
+			"label": "Link color",
+			"type": "string",
+			"info": "The hex code that you would like the color of the links in your tweets to appear."
+		},
+		"borderColor": {
+			"label": "Border color",
+			"type": "string",
+			"info": "The hex code that you would like the color of the border for your timeline."
+		},
+		"limit": {
+			"label": "Tweet limit",
+			"type": "string",
+			"info": "The number of tweets you would like to appear in your timeline. The minimum amount is 1 and the maximum amount is 20."
+		},
+		"noheader": {
+			"label": "No header",
+			"info": "Removes the header from the timeline.",
+			"type": "boolean"
+		},
+		"nofooter": {
+			"label": "No footer",
+			"info": "Removes the footer from the timeline.",
+			"type": "boolean"
+		},
+		"noborders": {
+			"label": "No border",
+			"info": "Removes all of the borders from the widget.",
+			"type": "boolean"
+		},
+		"noscrollbar": {
+			"label": "No scrollbar",
+			"info": "Crops and hides the main timeline scrollbar, if visible.",
+			"type": "boolean"
+		},
+		"transparent": {
+			"label": "Transparent",
+			"info": "Removes the background color from the timeline.",
+			"type": "boolean"
+		}
+	}
+}

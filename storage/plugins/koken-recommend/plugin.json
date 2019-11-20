@@ -1,0 +1,37 @@
+{ 
+	"name": "Recommend",
+	"version": "1.0",
+	"description": "Allows you to have a recommendation slider when a user scrolls to the end of a page, heavily inspired from the New York Times.",
+	"demo": "http://laurendavissmith.com/pages/recommendation-plugin-demo/",
+	"author": {
+		"name": "Lauren Davis Smith",
+		"link": "http://laurendavissmith.com"
+	},
+	
+	"data": {
+		"customTitle": {
+			"label": "Custom Title",
+			"type": "string"
+		},
+		"customDescription": {
+			"label": "Custom Description",
+			"info": "You can enter this either as plain text or you can also use HTML if you would like to include links.",
+			"type": "text"
+		},
+		"doNotShowOnPages": {
+			"label": "Do not show on pages",
+			"type": "boolean",
+			"info": "If checked this will not display the recommendations for page templates."
+		},
+		"doNotShowOnEssays": {
+			"label": "Do not show on essays",
+			"type": "boolean",
+			"info": "If checked this will not display the recommendations for essay templates."
+		},
+		"offset": {
+			"label": "Page Offset",
+			"info": "This determines how many pixels from the bottom of the page the user must scroll within before the recommendation slides in. The default is set to 100px from the bottom. If you would like the recommendation to always be shown enter -1 into the field.",
+			"type": "string"
+		}
+	}
+}
