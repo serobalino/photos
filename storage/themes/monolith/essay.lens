@@ -12,9 +12,6 @@
 						<div class="col-md-12">
 							<article>
 								<div class="heading">
-									<h1>
-										{{ essay.title }}
-									</h1>
 									<koken:tags>
 										<span>
 											<strong>{{ labels.tag.plural }}:</strong> 
@@ -66,7 +63,7 @@
 			<koken:else>
 				<koken:include file="layouts/error.html" />
 				<koken:note>
-					No published essay found 
+					No hay publicaciones
 				</koken:note>
 			</koken:load>
 		</div>
