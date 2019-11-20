@@ -79,7 +79,7 @@
 				<koken:breadcrumbs />
 				<koken:include file="layouts/error.html" />
 				<koken:note>
-					No album data found 
+					No hay datos
 				</koken:note>
 			</koken:load>
 			

@@ -15,7 +15,7 @@
     </ul>
   <koken:else>
     <koken:note>
-      No album data found 
+      No hay datos
     </koken:note>
 </koken:load>
 </main>

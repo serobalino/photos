@@ -82,7 +82,7 @@
 				</div>
 			</koken:if>
 			<koken:if true="settings.index_featuredalbums">
-				<h1 class="featalbumtext">Featured Albums</h1>
+				<h3 class="featalbumtext">Últimas Publicaciones</h1>
 				<div id="featuredalbums" class="row d-flex justify-content-center flex-wrap">
 					<koken:load source="featured_albums">
 						<koken:loop>
