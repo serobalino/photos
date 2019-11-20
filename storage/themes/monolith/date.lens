@@ -20,9 +20,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h1>All content published in <koken:time /></h1>
-						<h3>Filter by:</h3>
+						<h3>Filtro por:</h3>
 						<koken:load source="timeline" filter:scope="month">
-							<koken:select label="Select month" />
+							<koken:select label="Elija mes" />
 						</koken:load>
 					</div>
 				</div>
