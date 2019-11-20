@@ -36,9 +36,9 @@
 							<h1>{{ labels.timeline.singular }}</h1>
 						</koken:if>
 
-						<h3>Filter by:</h3>
+						<h3>Filtro por:</h3>
 						<koken:load source="timeline" filter:scope="month">
-							<koken:select label="Select month" />
+							<koken:select label="Elija mes" />
 						</koken:load>
 						<koken:categories>
 							<koken:select label="Select category" />

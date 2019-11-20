@@ -15,7 +15,7 @@
 							</koken:not>
 						</koken:if>
 						<koken:if data="settings.index_header" equals="welcome">
-							<h1>Welcome to {{ site.title }}</h1>
+							<h1>Bienvenid@ a {{ site.title }}</h1>
 						</koken:if>
 					</div>
 				</div>

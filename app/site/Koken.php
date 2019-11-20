@@ -108,7 +108,7 @@ META;
 			}
 		}
 
-		if (class_exists('IntlDateFormatter') && isset(self::$settings['language']) && self::$settings['language'] !== 'en') {
+		if (class_exists('IntlDateFormatter') && isset(self::$settings['language']) && self::$settings['language'] !== 'es') {
 			$df = new IntlDateFormatter(self::$settings['language'], IntlDateFormatter::NONE, IntlDateFormatter::NONE);
 			$df->setPattern(self::to_date_field_symbol($format));
 
