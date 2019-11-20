@@ -1,0 +1,809 @@
+{
+	"name": "OxyGen",
+	"version": "2.3.3",
+	"description": "OxyGen is a fully responsive theme for your Koken site, ensuring that you give your visitors the best experience of your content.\n\nOxyGen is built for both artist and writers alike giving you the most flexibility so you can concentrate on the asset that is important: your content.",
+	"demo": "https://demo.kokensupport.com/",
+	"terms": "Released under GNU GPLv3 license",
+	"documentation": "https://oxygen.kokensupport.com/",
+	 "author": {
+		"name": "Koken Community Support",
+		"mail": "oxygen@kokensupport.com",
+		"link": "https://kokensupport.com/"
+	},
+
+	"koken_version_required": "0.22.17",
+
+	"routes": {
+		"/community_center/": {
+			"template": "community_center"
+		}
+	},
+
+	"templates": {
+		"community_center": {
+			"name": "Community Center",
+			"description": "The KCS Community Center."
+		}
+	},
+
+	"navigation_groups": {
+		"legal": {
+			"label": "Auxiliary links",
+			"description": "Links shown in front page footer",
+			"defaults": [ "favorites", "timeline" ]
+		},
+		"support": {
+			"label": "Community Support",
+			"description": "Support Resources",
+			"defaults": [ "community_center",
+				{ "label": "Forums", "url": "https://kokensupport.com" },
+				{ "label": "Docs", "url": "https://docs.kokensupport.com" },
+				{ "label": "Tickets", "url": "https://help.kokensupport.com" }
+			]
+		}
+	},
+
+	"language": {
+		"da": {
+			"kcs_camera_info_": "Kamera info",
+			"kcs_caption_": "Overskrift",
+			"kcs_image_info_": "Billede info",
+			"kcs_name_": "Navn:",
+			"kcs_uploaded_": "Uploadet:",
+			"kcs_captured_": "Fanget:",
+			"kcs_also_in_": "Også i:",
+			"kcs_photographer_": "Fotograf:",
+			"kcs_license_": "Licens:"
+		},
+
+		"de": {
+			"kcs_camera_info_": "Kamera Info",
+			"kcs_caption_": "Beschreibung",
+			"kcs_image_info_": "Bildinfo",
+			"kcs_name_": "Name:",
+			"kcs_uploaded_": "Hochgeladen:",
+			"kcs_captured_": "Erfasst:",
+			"kcs_also_in_": "Auch in:",
+			"kcs_photographer_": "Fotograf:",
+			"kcs_license_": "Lizenz:"
+		},
+
+		"el": {
+			"kcs_camera_info_": "Πληροφορίες κάμερας",
+			"kcs_caption_": "Λεζάντα",
+			"kcs_image_info_": "Πληροφορίες εικόνας",
+			"kcs_name_": "Όνομα:",
+			"kcs_uploaded_": "Μεταφορτώθηκε:",
+			"kcs_captured_": "Λήφθηκε:",
+			"kcs_also_in_": "Επίσης σε:",
+			"kcs_photographer_": "Φωτογράφος:",
+			"kcs_license_": "Άδεια:"
+		},
+
+		"en": {
+			"kcs_camera_info_": "Camera info",
+			"kcs_caption_": "Caption",
+			"kcs_image_info_": "Image info",
+			"kcs_name_": "Name:",
+			"kcs_uploaded_": "Uploaded:",
+			"kcs_captured_": "Captured:",
+			"kcs_also_in_": "Also in:",
+			"kcs_photographer_": "Photographer:",
+			"kcs_license_": "License:"
+		},
+
+		"es": {
+			"kcs_camera_info_": "Información cámara",
+			"kcs_caption_": "Título",
+			"kcs_image_info_": "Información de la imagen",
+			"kcs_name_": "Nombre:",
+			"kcs_uploaded_": "Cargado:",
+			"kcs_captured_": "Capturado:",
+			"kcs_also_in_": "También en:",
+			"kcs_photographer_": "Fotógrafo:",
+			"kcs_license_": "Licencia:"
+		},
+
+		"fr": {
+			"kcs_camera_info_": "Informations sur l'appareil",
+			"kcs_caption_": "Titre",
+			"kcs_image_info_": "Informations sur l'image",
+			"kcs_name_": "Nom:",
+			"kcs_uploaded_": "Téléchargé:",
+			"kcs_captured_": "Enregistré:",
+			"kcs_also_in_": "Aussi en:",
+			"kcs_photographer_": "Photographe:",
+			"kcs_license_": "Licence:"
+		},
+
+		"hu": {
+			"kcs_camera_info_": "Fényképezőgép infó",
+			"kcs_caption_": "Képaláírás",
+			"kcs_image_info_": "Kép infó",
+			"kcs_name_": "Név:",
+			"kcs_uploaded_": "Feltöltés ideje:",
+			"kcs_captured_": "Itt is:",
+			"kcs_also_in_": "Itt is:",
+			"kcs_photographer_": "Fotós:",
+			"kcs_license_": "Licensz:"
+		},
+
+		"is": {
+			"kcs_camera_info_": "Myndavéla upplýsingar",
+			"kcs_caption_": "Texti",
+			"kcs_image_info_": "Upplýsingar um mynd",
+			"kcs_name_": "Name:",
+			"kcs_uploaded_": "Upphalað:",
+			"kcs_captured_": "Mynd tekin:",
+			"kcs_also_in_": "Einnig í:",
+			"kcs_photographer_": "Ljósmyndari:",
+			"kcs_license_": "Leyfi:"
+		},
+
+		"it": {
+			"kcs_camera_info_": "Info fotocamera",
+			"kcs_caption_": "Didascalia",
+			"kcs_image_info_": "Info immagine",
+			"kcs_name_": "Nome:",
+			"kcs_uploaded_": "Caricato:",
+			"kcs_captured_": "Catturati:",
+			"kcs_also_in_": "Anche in:",
+			"kcs_photographer_": "Fotografo:",
+			"kcs_license_": "Licenza:"
+		},
+
+		"nl": {
+			"kcs_camera_info_": "Camera info",
+			"kcs_caption_": "Onderschrift",
+			"kcs_image_info_": "Afbeelding info",
+			"kcs_name_": "Naam:",
+			"kcs_uploaded_": "Geüpload:",
+			"kcs_captured_": "Opname:",
+			"kcs_also_in_": "Ook in:",
+			"kcs_photographer_": "Fotograaf:",
+			"kcs_license_": "Licentie:"
+		},
+
+		"no": {
+			"kcs_camera_info_": "Kameraet info",
+			"kcs_caption_": "Bildetekst",
+			"kcs_image_info_": "Bildeinformasjon",
+			"kcs_name_": "Navn:",
+			"kcs_uploaded_": "Lastet opp:",
+			"kcs_captured_": "Fanget:",
+			"kcs_also_in_": "Også i:",
+			"kcs_photographer_": "Fotograf:",
+			"kcs_license_": "Lisens:"
+		},
+
+		"pl": {
+			"kcs_camera_info_": "Informacja o aparacie",
+			"kcs_caption_": "Podpis",
+			"kcs_image_info_": "Informacje o zdjęciu",
+			"kcs_name_": "Nazwa:",
+			"kcs_uploaded_": "Wysłany:",
+			"kcs_captured_": "Wykonano:",
+			"kcs_also_in_": "Ponadto:",
+			"kcs_photographer_": "Fotograf:",
+			"kcs_license_": "Licencja:"
+		},
+
+		"ru": {
+			"kcs_camera_info_": "Камера",
+			"kcs_caption_": "Подпись",
+			"kcs_image_info_": "Снимок",
+			"kcs_name_": "Название:",
+			"kcs_uploaded_": "Загружено:",
+			"kcs_captured_": "Снято:",
+			"kcs_also_in_": "Также в:",
+			"kcs_photographer_": "Фотограф:",
+			"kcs_license_": "Лицензия:"
+		},
+
+		"sv": {
+			"kcs_camera_info_": "Kamera info",
+			"kcs_caption_": "Bildtext",
+			"kcs_image_info_": "Bildinfo",
+			"kcs_name_": "Namn:",
+			"kcs_uploaded_": "Lades upp:",
+			"kcs_captured_": "Togs:",
+			"kcs_also_in_": "Finns i:",
+			"kcs_photographer_": "Fotograf:",
+			"kcs_license_": "Licens:"
+		}
+
+	},
+
+	"settings": {
+		"Language": {
+			"icon":"info",
+			"settings": {
+				"language": {
+					"label": "Language",
+					"type": "select",
+					"options": [
+						{ "label": "Danish",	"value": "da" },
+						{ "label": "Dutch",		"value": "nl" },
+						{ "label": "English",	"value": "en" },
+						{ "label": "French",	"value": "fr" },
+						{ "label": "Hungarian",	"value": "hu" },
+						{ "label": "German",	"value": "de" },
+						{ "label": "Greek", 	"value": "el" },
+						{ "label": "Icelandic",	"value": "is" },
+						{ "label": "Italian",	"value": "it" },
+						{ "label": "Norwegian",	"value": "no" },
+						{ "label": "Polish",	"value": "pl" },
+						{ "label": "Russian",	"value": "ru" },
+						{ "label": "Spanish",	"value": "es" },
+						{ "label": "Swedish",	"value": "sv" }
+					],
+					"value": "en"
+				}
+			}
+		},
+		"Site title": {
+			"icon":"type",
+			"settings": {
+				"site_title_type": {
+					"label": "Type",
+					"type": "select",
+					"options": [
+						{ "label": "Text", "value": "text" },
+						{ "label": "Image", "value": "image" }
+					],
+					"value": "text"
+				},
+				"site_title_img_url": {
+					"label": "Image URL",
+					"type": "string",
+					"value": "",
+					"dependencies": {
+						"evaluate": "any",
+						"conditions": [
+							{ "option": "site_title_type", "equals": "image" },
+							{ "option": "site_title_type", "equals": "combi" }
+						]
+					}
+				},
+				"site_title_img_scale": {
+					"label": "Regular height",
+					"type": "slider",
+					"min": 10,
+					"max": 100,
+					"step": 1,
+					"value": 100,
+					"suffix": "px",
+					"dependencies": {
+						"evaluate": "any",
+						"conditions": [
+							{ "options": "site_title_type", "equals": "image" },
+							{ "option": "site_title_type", "equals": "combi" }
+						]
+					}
+				},
+				"site_title_img_scale_mobile": {
+					"label": "Mobile height",
+					"type": "slider",
+					"min": 10,
+					"max": 100,
+					"step": 1,
+					"value": 50,
+					"suffix": "px",
+					"dependencies": {
+						"evaluate": "any",
+						"conditions": [
+							{ "option": "site_title_type", "equals": "image" },
+							{ "option": "site_title_type", "equals": "combi" }
+						]
+					}
+				},
+				"logo_state": {
+					"label": "Logo state",
+					"type": "select",
+					"options": [
+						{ "label": "Fixed", "value": "fixed" },
+						{"label": "Absolute", "value": "absolute" }
+					],
+					"value": "fixed",
+					"note": "Should the logo/site title be fixed when scrolling, or stay when scrolling down the page?",
+					"note_align": "left"
+				},
+				"nav_logo_opacity": {
+					"label": "Opacity",
+					"type": "slider",
+					"min": 10,
+					"max": 99,
+					"step": 1,
+					"value": 49,
+					"suffix": "op",
+					"note": "Sets the initial opacity of the logo/sitetitle and menu layer.",
+					"note_align": "left"
+				}
+			}
+		},
+		"Navigation": {
+			"icon": "layout",
+			"settings": {
+				"menu_type": {
+					"label": "Type",
+					"type": "select",
+					"options": [
+						{ "label": "Regular", "value": "regular" },
+						{ "label": "Regular Expanded", "value": "expanded" }
+					],
+					"value": "regular"
+				},
+				"show_breadcrumps": {
+					"label": "Show breadcrumbs",
+					"type": "boolean",
+					"value": {
+						"category": false,
+						"categories": false,
+						"error": false,
+						"login": false,
+						"map": false,
+						"tags": false,
+						"tag": false,
+						"timeline": false
+					},
+					"note": "Enable breadcrumbs in some lens files.",
+					"note_align": "left",
+					"scope": [ "category", "categories", "error", "login", "map", "tags", "tag", "timeline" ],
+					"scoped_values": true
+				}
+			}
+		},
+		"Images": {
+			"icon": "slideshow",
+			"settings": {
+				"use_lightbox": {
+					"label": "Open in lightbox",
+					"type": "boolean",
+					"value": {
+						"album": true,
+						"contents": false,
+						"content": true,
+						"favorites": true,
+						"tag": true,
+						"category": true,
+						"timeline": true
+					},
+					"control_first": true,
+					"reload_preview": true,
+					"note": "Disables lightbox.",
+					"note_align": "left",
+					"scope": [ "album", "contents", "content", "favorites", "tag", "category", "timeline" ],
+					"scoped_values": true
+				},
+				"show_exif": {
+					"label": "Show img info",
+					"type": "boolean",
+					"value": {
+						"contents": false,
+						"content": true
+					},
+					"note": "Enables showing EXIF, tags and various image info in content",
+					"note_align": "left",
+					"scope": [ "contents", "content"],
+					"scoped_values": true
+				},
+				"grid_asp_ratio": {
+					"label": "Aspect ratio",
+					"type": "select",
+					"options": [
+						{ "label": "1:1", "value": "1:1" },
+						{ "label": "2:1", "value": "2:1" },
+						{ "label": "3:2", "value": "3:2" },
+						{ "label": "4:3", "value": "4:3" },
+						{ "label": "16:9", "value": "16:9" },
+						{ "label": "16:10", "value": "16:10" }
+					],
+					"value": "1:1",
+					"scope": [ "albums", "album", "archive.albums", "sets", "set", "contents", "favorites", "archive.contents", "timeline", "tags", "tag", "category", "categories" ],
+					"scoped_values": true,
+					"note": "This controls the aspect ratio on the image thumbs and albums cover thumbs",
+					"note_align": "left"
+				},
+				"show_title": {
+					"label": "Img title",
+					"type": "select",
+					"options":[
+						{ "label": "Overlay", "value": "name_overlay" },
+						{ "label": "Bottom", "value": "name_bottom" },
+						{ "label": "Hide", "value": "name_hidden" }
+					],
+					"value": "name_overlay",
+					"scope": [ "album", "set", "favorites", "contents" ],
+					"note": "This shows the title overlay in albums, sets, favorites and contents",
+					"note_align": "left"
+				}
+			}
+		},
+		"Layout": {
+			"icon":"layout",
+			"settings": {
+				"cover_styles": {
+					"label": "Cover Styles",
+					"type": "select",
+					"options": [
+						{ "label": "Plain text", "value": "text_cover" },
+						{ "label": "Cover image", "value": "image_cover" },
+						{ "label": "No cover", "value": "no_cover" }
+					],
+					"value": "image_cover",
+					"note": "Cover style for albums pages, favorites and contents.",
+					"note_align": "left",
+					"scope": [ "album", "contents", "favorites", "set" ]
+				},
+				"Album Cover settings": {
+					"collapse": true,
+					"album_cover_text_color": {
+						"label": "Text color",
+						"type": "color",
+						"value": "#aaa",
+						"control_first": true,
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"album_cover_owerlay_opacity": {
+						"label": "Opacity",
+						"type": "slider",
+						"min": 1,
+						"max": 99,
+						"step": 1,
+						"value": 75,
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"album_cover_owerlay_color": {
+						"label": "Overlay color",
+						"type": "color",
+						"with_alpha": true,
+						"value": "rgba(0,0,0,.3)",
+						"control_first": true,
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"album_cover_title": {
+						"label": "Album title",
+						"type": "boolean",
+						"value": true,
+						"note": "This hides the album title",
+						"note_align": "left",
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [ "album", "set" ]
+					},
+					"cover_title_min": {
+						"label": "Title min size",
+						"type": "slider",
+						"min": 10,
+						"max": 40,
+						"step": 1,
+						"value": 30,
+						"suffix": "px",
+						"dependencies": {
+							"evaluate": "all",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"cover_title_max": {
+						"label": "Title max size",
+						"type": "slider",
+						"min": 40,
+						"max": 100,
+						"step": 1,
+						"value": 60,
+						"suffix": "px",
+						"dependencies": {
+							"evaluate": "all",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"cover_title_ls": {
+						"label": "Title spacing",
+						"type": "slider",
+						"min": -10,
+						"max": 10,
+						"step": 1,
+						"value": -2,
+						"suffix": "px",
+						"dependencies": {
+							"evaluate": "all",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" }
+							]
+						},
+						"scope": [  "album", "contents", "favorites", "set"  ]
+					},
+					"album_cover_description": {
+						"label": "Album description",
+						"type": "boolean",
+						"value": true,
+						"note": "This hides the album description",
+						"note_align": "left",
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [ "album", "set" ]
+					},
+					"album_cover_time": {
+						"label": "Album date",
+						"type": "boolean",
+						"value": true,
+						"note": "This shows last time when the album was updated",
+						"note_align": "left",
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [ "album", "set" ]
+					},
+					"album_cover_cats": {
+						"label": "Album categories",
+						"type": "boolean",
+						"value": true,
+						"note": "This shows the categories assigned to the album",
+						"note_align": "left",
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [ "album", "set" ]
+					},
+					"album_cover_tags": {
+						"label": "Album tags",
+						"type": "boolean",
+						"value": false,
+						"note": "This shows tags assigned to albums",
+						"note_align": "left",
+						"dependencies": {
+							"evaluate": "any",
+							"conditions": [
+								{ "option": "cover_styles", "equals": "image_cover" },
+								{ "option": "cover_styles", "equals": "text_cover" }
+							]
+						},
+						"scope": [ "album", "set" ]
+					},
+					"album_cover_downarrow": {
+						"label": "Down arrow",
+						"type": "select",
+						"options": [
+							{ "label": "Arrow One", "value": "one" },
+							{ "label": "Arrow Two", "value": "two" },
+							{ "label": "Arrow Three", "value": "three" },
+							{ "label": "Arrow Four", "value": "four" },
+							{ "label": "Arrow Five", "value": "five" },
+							{ "label": "Arrow Six", "value": "six" },
+							{ "label": "Arrow Seven", "value": "seven" }
+						],
+						"value": "six",
+						"scope": [  "album", "contents", "favorites", "set", "sets"  ]
+					}
+				},
+				"show_tags_cats": {
+					"label": "Show tags and categories",
+					"type": "boolean",
+					"value": {
+						"essay": true,
+						"essays": false,
+						"category": true,
+						"tag": true,
+						"timeline": true
+					},
+					"note": "Shows related categories and tags.",
+					"note_align": "left",
+					"scope": [ "essay", "essays", "category", "tag", "timeline" ],
+					"scoped_values": true
+				},
+				"albums_index_limit": {
+					"label": "Items per page",
+					"type": "slider",
+					"min": 6,
+					"max": 48,
+					"step": 6,
+					"value": 12,
+					"scope": [ "albums", "archive.albums", "sets", "set" ]
+				},
+				"albums_detail_limit": {
+					"label": "Items per page",
+					"type": "slider",
+					"min": 12,
+					"max": 100,
+					"step": 6,
+					"value": 24,
+					"scope": [ "album" ]
+				},
+				"content_index_limit": {
+					"label": "Items per page",
+					"type": "slider",
+					"min": 12,
+					"max": 100,
+					"step": 6,
+					"value": 24,
+					"scope": [ "contents", "favorites", "archive.contents", "timeline", "tags", "tag", "category", "categories" ]
+				},
+				"essays_index_limit": {
+					"label": "Items per page",
+					"type": "slider",
+					"min": 6,
+					"max": 48,
+					"value": 12,
+					"scope": [ "essays" ]
+				},
+				"show_feat_img_pages": {
+					"label": "Show featured image",
+					"type": "boolean",
+					"value": false,
+					"note": "This shows the featured image on the top of the page",
+					"note_align": "left",
+					"scope": [ "pages", "page" ]
+				},
+				"show_feat_img_essay": {
+					"label": "Show featured image",
+					"type": "boolean",
+					"value": true,
+					"note": "This shows the featured image on the top of the page",
+					"note_align": "left",
+					"scope": [ "essay" ]
+				},
+				"show_feat_img_essays": {
+					"label": "Show featured image",
+					"type": "boolean",
+					"value": false,
+					"note": "This shows the featured image below the essay headline",
+					"note_align": "left",
+					"scope": [ "essays" ]
+				},
+				"text_max_width": {
+					"label": "Width for text content",
+					"type": "slider",
+					"min": 500,
+					"max": 1500,
+					"step": 50,
+					"value": 750,
+					"suffix": "px",
+					"note": "Max width for the text column in Pages and Essays",
+					"note_align": "left"
+				}
+			}
+		},
+		"Social": {
+			"icon":"social",
+			"settings": {
+				"show_sharing_essay": {
+					"label": "Show sharing icons",
+					"type": "boolean",
+					"value": true,
+					"note": "This hides the sharing icons",
+					"note_align": "left",
+					"scope": [ "essay", "essays" ]
+				},
+				"show_sharing_img": {
+					"label": "Show sharing icons",
+					"type": "boolean",
+					"value": true,
+					"note": "This hides the sharing icons",
+					"note_align": "left",
+					"scope": [ "album", "albums", "content", "contents" ]
+				},
+				"show_sharing_page": {
+					"label": "Show sharing icons",
+					"type": "boolean",
+					"value": false,
+					"note": "This shows the sharing icons",
+					"note_align": "left",
+					"scope": [ "pages", "page" ]
+				}
+			}
+		},
+		"Discussions": {
+			"icon":"discuss",
+			"settings": {
+				"show_disc_essay": {
+					"label": "Show essay discussions",
+					"note": "Requires the Disqus plugin",
+					"note_align": "left",
+					"type": "boolean",
+					"value": true,
+					"control_first": true,
+					"scope": [ "essay" ]
+				},
+				"show_disc_image": {
+					"label": "Show image discussions",
+					"note": "Requires the Disqus plugin",
+					"note_align": "left",
+					"type": "boolean",
+					"value": false,
+					"control_first": true,
+					"scope": [ "albums", "album" ],
+					"scoped_values": false
+				},
+				"show_disc_content": {
+					"label": "Show content discussions",
+					"note": "Requires the Disqus plugin",
+					"note_align": "left",
+					"type": "boolean",
+					"value": false,
+					"control_first": true,
+					"scope": [ "content", "contents" ]
+				},
+				"show_disc_page": {
+					"label": "Show page discussions",
+					"type": "boolean",
+					"value": false,
+					"control_first": true,
+					"note": "Requires the Disqus plugin",
+					"note_align": "left",
+					"scope": [ "pages", "page" ]
+				}
+			}
+		},
+		"Misc": {
+			"icon":"misc",
+			"settings": {
+				"show_credits": {
+					"label": "Show credits",
+					"type": "boolean",
+					"value": true,
+					"note": "This hides the credit on the index page",
+					"note_align": "left"
+				},
+				"show_legal_links": {
+					"label": "Show Legal links",
+					"type": "boolean",
+					"value": true,
+					"note": "This shows a extra set of links on the front page lower right side",
+					"note_align": "left"
+				},
+				"slideshow_nav_hide": {
+					"label": "Hide the slideshow nav arrows",
+					"type": "boolean",
+					"value": false,
+					"note": "This hides the slideshow nav arrows on the splashpage",
+					"note_align": "left"
+				}
+			}
+		}
+	}
+}

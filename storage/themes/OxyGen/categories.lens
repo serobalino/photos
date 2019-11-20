@@ -1,0 +1,28 @@
+<koken:include file="inc/components/header.html" />
+<main role="main">
+<article class="top-section">
+	<h1 class="page-name">{{ language.categories }}</h1>
+	<koken:if data="settings.show_breadcrumps" equals="true">
+		<div class="OG_breadcrumps">
+			<p><koken:breadcrumbs separator="/" show_if_single="false" /></p>
+		</div>
+	</koken:if>
+</article>
+<koken:load>
+	<ul class="grid">
+    	<koken:loop>
+    		<koken:link title="{{ language.view_all_content_in_title collate='category.title' }}">
+		      	<li class="tag-bg">
+		      		<koken:load source="category" filter:tags="{{ tag.title }}">
+		   				<koken:img crop="adaptive"/>
+		   			</koken:load>
+					<span class="tag">{{ category.counts.total }}x {{ category.title }}</span>
+		      	</li>
+	      	</koken:link>
+    	</koken:loop>
+  	</ul>
+<koken:else>
+	No tags found.
+</koken:load>
+</main>
+<koken:include file="inc/components/footer_none.html" />

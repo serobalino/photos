@@ -1,0 +1,47 @@
+﻿<koken:include file="inc/components/header.html" />
+<main role="main">
+<koken:load>
+	<article class="top-picinfocontainer">
+		<h1 class="album-name">{{ content.title | content.filename }}</h1>
+	</article>
+	<div class="k-content">
+		<koken:include file="inc/components/next-prev.html" />
+		<koken:if data="settings.use_lightbox" equals="true">
+			<koken:content_image>
+				<koken:link bind_to_key="f" title="{{ language.view }} {{ content.title | content.filename }}" lightbox="{{ settings.use_lightbox }}">
+					<koken:img respond_to="width" lazy="true" alt="{{ content.title | content.filename }}" />
+				</koken:link>
+			</koken:content_image>
+		<koken:else>
+			<koken:content_image>
+				<koken:img respond_to="width" lazy="true" alt="{{ content.title | content.filename }}" />
+			</koken:content_image>
+		</koken:if>
+		<koken:content_video>
+			<koken:video respond_to="width" />
+		</koken:content_video>
+		<koken:include file="inc/components/next-prev.html" />
+		<div class="entry">
+			<koken:not empty="content.caption">{{ content.caption }}</koken:not>
+		</div>
+	</div>
+
+		<koken:if data="settings.show_exif" equals="true">
+			<koken:include file="inc/components/picinfo.html" />
+		</koken:if>
+		<koken:if data="settings.show_sharing_img" equals="true">
+			<koken:include file="inc/components/share.html" />
+		</koken:if>
+		<koken:if data="settings.show_disc_content" equals="true">
+			<div class="disquis">
+				<koken:discussion>{{ discussion }}</koken:discussion>
+			</div>
+		</koken:if>
+
+<koken:else>
+	<koken:note>
+		No image or video found
+	</koken:note>
+</koken:load>
+</main>
+<koken:include file="inc/components/footer_none.html" />
