@@ -46,7 +46,7 @@
 								</div>
 								<p>{{ essay.excerpt }}</p>
 								<p>
-									<koken:link title="{{ essay.title }}">Read More...</koken:link>
+									<koken:link title="{{ essay.title }}">Ver más...</koken:link>
 								</p>
 							</article>
 						</div>
